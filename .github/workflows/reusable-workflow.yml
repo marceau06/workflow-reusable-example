@@ -12,8 +12,6 @@ on:
         required: false
         default: 'false'
         type: boolean
-    branches:
-       - main
 
 jobs:
   say-hello:
@@ -21,7 +19,7 @@ jobs:
 
     steps:
       - name: Greet the user
-        uses: echo "Hello, ${{ inputs.name }}
+        run: echo "Hello, ${{ inputs.name }}
 
   test-job:
     if: ${{ inputs.run-tests }}
