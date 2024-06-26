@@ -7,7 +7,7 @@ on:
         description: 'Name of the user'
         required: true
         type: string
-     run-tests:
+    run-tests:
         description: 'Wether to run tests'
         required: false
         default: 'false'
